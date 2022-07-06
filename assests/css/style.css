@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: 'Quicksand', sans-serif; 
+    background-color: #E3E7EB;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar style */
+nav{
+    display: flex;
+    background-color: #171717;
+    height: 8vh;
+    padding: 0.4rem;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav .left{
+    flex: 50%;
+    padding-left: 90px;
+}
+nav .left img{
+    width: 35px;
+    cursor: pointer;
+}
+nav .left ul{
+    list-style: none;
+}
+nav .left ul li{
+    display: inline;
+}
+nav .left ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+nav .left ul li a.home{
+   font-weight: 800;
+}
+nav .right{
+    flex: 50%;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+nav .right a{
+    text-decoration: none;
+    background-color: #079211;
+    padding: 0.4em 1em;
+    color: white;
+    border-radius: 3px;
+}
+
+main{
+    overflow: auto;
+    padding: 20px;
+    background-color: #201F1F;
+}
+
+.container{
+    width: 70%;
+    margin: 1rem auto;
+    padding: 2.5rem 5rem;
+    border-radius: 3px;
+    background-color: #323232;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .bio{
+    flex: 70%;
+}
+.container .bio .link{
+    display: flex;
+    margin: 2.5rem 0 0 0;
+    align-items: center;
+}
+.container .bio .link a.contact{
+    background-color: #079211; 
+    color: whitesmoke; 
+    border-radius: 3px; 
+    margin: 0; 
+    padding: 5px 30px; 
+}
+.container .bio .link a{
+    text-decoration: none; 
+    margin-left: 1rem; 
+    color: white;
+}
+.container .bio .link i{
+    width: 1rem;
+    margin-left: 0.5rem;
+    color: white;
+}
+.container .bio h1{
+    color: white;
+}
+.container .bio p{
+    text-align: justify;
+    width: 90%;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.container .div-sosmed{
+    margin: 3rem 0 0 0;
+}
+.container .div-sosmed a{
+    text-decoration: none; 
+    margin: 0 20px 0 0;
+    color:white;
+}
+.container .div-sosmed a i{
+    font-size: 28px;
+}
+
+.container .profile{
+    flex: 30%;
+    border-radius: 5px;
+    background-color: #201F1F;
+}
+.container .profile img{
+    width: 100%; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
+.container .profile div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+}
+.container .profile div p{
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+.container .profile div h3{
+    font-size: 0.8rem;
+    margin: 5px 0 0 0; 
+    text-align: center;
+    color: white;
+    font-weight: 400; 
+}
+
+
+div.contact-form{
+    width: 30rem;
+    background-color: #eee;
+    border-radius: 1rem;
+    padding: 1.5rem 3rem;
+    margin: 1rem auto;
+
+}
+div.contact-form h1{
+    text-align: center;
+    color: #171717;
+}
+div.contact-form input[type=text], input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical ; 
+}
+div.contact-form form button{
+    display: grid;
+    background-color: #171717;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .bio, 
+    .profile {
+        width: 100%;
+        padding: 0;
+    }
+}
